@@ -18,6 +18,7 @@
         h1 { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
         .date { font-size: 13px; color: #8b7e74; margin-bottom: 24px; }
         h2 { font-size: 17px; font-weight: 600; margin-top: 24px; margin-bottom: 8px; }
+        h3 { font-size: 15px; font-weight: 600; margin-top: 16px; margin-bottom: 6px; }
         p, li { font-size: 15px; margin-bottom: 8px; }
         ul { padding-left: 20px; margin-bottom: 12px; }
         a { color: #c4956a; text-decoration: none; }
@@ -27,39 +28,150 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="date">Effective date: March 10, 2026</p>
+    <p class="date">Effective date: April 1, 2026</p>
 
-    <p>Alune ("the App") is a personal productivity and wellness companion built by Ahmed Diab. Your privacy is fundamentally important to us.</p>
+    <p>
+        Alune ("the App") is a personal productivity and wellness companion built
+        by Ahmed Diab. Your privacy is fundamentally important to us.
+    </p>
 
-    <h2>Data Collection</h2>
-    <p>Alune does <strong>not</strong> collect, transmit, or share any personal data with external servers, third parties, or analytics services. All information you enter — habits, goals, journal entries, notes, and chat messages — is stored <strong>exclusively on your device</strong> using Apple's SwiftData framework.</p>
+    <h2>On-Device Data</h2>
+    <p>
+        The personal data you create in Alune — habits, goals, journal entries,
+        notes, and calendar or reminder references — is stored
+        <strong>on your device</strong> using Apple's SwiftData framework. This
+        data is not uploaded to any server.
+    </p>
+
+    <h2>Data Sent to Servers</h2>
+    <p>
+        Certain features require network communication. When you use these
+        features, limited data leaves your device as described below:
+    </p>
+    <ul>
+        <li>
+            <strong>AI Assistant (text):</strong> When you send a message to the AI
+            assistant, the text of your conversation is transmitted over HTTPS to a
+            secure server-side proxy hosted on Supabase, which forwards it to a
+            third-party AI model provider (OpenRouter) for processing. No
+            personally identifiable information beyond the text you type is
+            attached. Conversations are not stored on any server after processing.
+        </li>
+        <li>
+            <strong>Voice transcription:</strong> When you use the voice input
+            feature, your audio recording is transmitted over HTTPS to the same
+            Supabase proxy, which forwards it to OpenAI's Whisper service for
+            speech-to-text conversion. The audio is not retained after
+            transcription.
+        </li>
+        <li>
+            <strong>Subscription management:</strong> Alune uses RevenueCat to
+            manage in-app purchases and subscriptions. RevenueCat receives your
+            anonymous App Store purchase receipts to verify subscription status. No
+            personal data such as your name or email is shared with RevenueCat.
+            See <a href="https://www.revenuecat.com/privacy/" target="_blank">RevenueCat's Privacy Policy</a>.
+        </li>
+    </ul>
 
     <h2>Device Permissions</h2>
-    <p>Alune may request the following permissions, each used solely for the stated purpose:</p>
+    <p>
+        Alune may request the following permissions, each used solely for the
+        stated purpose:
+    </p>
     <ul>
-        <li><strong>Calendar &amp; Reminders</strong> — to display your schedule and create events or reminders on your behalf.</li>
-        <li><strong>Microphone &amp; Speech Recognition</strong> — to enable voice dictation so you can speak instead of type.</li>
-        <li><strong>Notifications</strong> — to send local habit reminders at times you choose. No push notifications are sent from any server.</li>
+        <li>
+            <strong>Calendar &amp; Reminders</strong> — to display your schedule and
+            create events or reminders on your behalf.
+        </li>
+        <li>
+            <strong>Microphone</strong> — to enable voice dictation so you can speak
+            instead of type.
+        </li>
+        <li>
+            <strong>Notifications</strong> — to send local habit reminders at times
+            you choose. No push notifications are sent from any server.
+        </li>
     </ul>
     <p>You can revoke any permission at any time in iOS Settings.</p>
 
-    <h2>AI Assistant</h2>
-    <p>Alune includes an AI chat assistant. Conversations may be sent to a third-party AI API for processing. No personally identifiable information is attached to these requests beyond the text you type. Conversations are stored locally on your device.</p>
+    <h2>AI Assistant Limits</h2>
+    <ul>
+        <li>
+            <strong>Free trial:</strong> If you do not have an active subscription
+            or AI add-on, you may send a limited number of Assistant messages
+            (shown in the app) as a one-time trial. After that, Assistant requires
+            a qualifying purchase.
+        </li>
+        <li>
+            <strong>Pro subscribers:</strong> Assistant is included with up to
+            300 messages per day (or the limit shown in the app).
+        </li>
+        <li>
+            We may adjust daily limits for security, stability, or fair use.
+            Current limits are always described in the app.
+        </li>
+    </ul>
 
-    <h2>Subscriptions &amp; Purchases</h2>
-    <p>Alune offers optional paid subscriptions managed through Apple's App Store and RevenueCat. Purchase transactions are processed by Apple. RevenueCat receives an anonymous app user ID to manage subscription status — no personal data is shared. See <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat's privacy policy</a> for details.</p>
+    <h2>Data Retention &amp; Deletion</h2>
+    <p>
+        All personal data (habits, goals, journal entries, notes, medicine logs,
+        and reading lists) is stored exclusively on your device. Alune does not
+        maintain any server-side copy of this data.
+    </p>
+    <ul>
+        <li>
+            <strong>Delete all data:</strong> To delete all your data, simply delete
+            the Alune app from your device. All locally stored data will be removed
+            immediately.
+        </li>
+        <li>
+            <strong>AI conversations:</strong> Message text sent to the AI assistant
+            is not retained on any server after processing. Conversation history
+            stored on your device is deleted when you delete the app.
+        </li>
+        <li>
+            <strong>Voice recordings:</strong> Audio sent for transcription is
+            discarded by the transcription service immediately after processing and
+            is not stored.
+        </li>
+        <li>
+            <strong>Subscription data:</strong> Anonymous purchase receipts held by
+            RevenueCat are subject to
+            <a href="https://www.revenuecat.com/privacy/" target="_blank">RevenueCat's data
+            retention policy</a>. You may contact RevenueCat directly to request
+            deletion of your anonymous receipt data.
+        </li>
+    </ul>
+    <p>
+        To request deletion of any data associated with your use of Alune, contact
+        us at <strong><a href="mailto:alunesupport@gmail.com">alunesupport@gmail.com</a></strong>.
+    </p>
 
     <h2>Third-Party Services</h2>
-    <p>Alune does not integrate any advertising, analytics, or tracking SDKs. No cookies or fingerprinting technologies are used.</p>
+    <p>
+        Alune does not integrate any advertising, analytics, or tracking SDKs.
+        No cookies or fingerprinting technologies are used. The only third-party
+        services are those described above (AI processing via OpenRouter/OpenAI
+        and subscription management via RevenueCat).
+    </p>
 
     <h2>Children's Privacy</h2>
-    <p>Alune is not directed at children under 13. We do not knowingly collect information from children.</p>
+    <p>
+        Alune is not directed at children under 13. We do not knowingly collect
+        information from children.
+    </p>
 
     <h2>Changes</h2>
-    <p>We may update this policy from time to time. Any changes will be reflected in the app with an updated effective date.</p>
+    <p>
+        We may update this policy from time to time. Any changes will be reflected
+        in the app with an updated effective date.
+    </p>
 
     <h2>Contact</h2>
-    <p>If you have questions about this policy, please contact us at <strong><a href="mailto:alunesupport@gmail.com">alunesupport@gmail.com</a></strong>.</p>
+    <p>
+        If you have questions about this policy, please contact us at
+        <strong><a href="mailto:alunesupport@gmail.com">alunesupport@gmail.com</a></strong>.
+    </p>
 
     <p class="footer"><a href="index.html">&larr; Back to Support</a></p>
     <p class="footer">&copy; 2026 Ahmed Diab. All rights reserved.</p>
